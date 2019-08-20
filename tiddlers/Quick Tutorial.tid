@@ -1,0 +1,16 @@
+created: 20190404132604276
+creator: Mohammad
+modified: 20190404194744977
+modifier: Mohammad
+tags: start
+title: Quick Tutorial
+type: text/vnd.tiddlywiki
+
+<<alert info """
+# Create a new repository on ''GitHub'' from a Tiddlywiki on Node.js
+# Add the `.travis.yml` configuration file to repository
+# Create a personal access token on ''GitHub'' with required premissions
+# Add your repository to ''Travis-CI''
+# Add an environmental variable to to ''Travis-CI'' repository with the token value from step two
+# Back to GitHub, enable ''GitHub Pages'' for the repository and choose `gh-pages` branch as source
+""">>

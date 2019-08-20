@@ -1,0 +1,27 @@
+created: 20190404132407020
+creator: Mohammad
+modified: 20190820140818605
+modifier: Mohammad
+tags: start
+title: Tiddlywiki, Travis-CI and GitHub Pages
+type: text/vnd.tiddlywiki
+
+{{$:/status}}
+
+This wiki shows how to set up websites hosted on [[GitHub Pages|https://pages.github.com/]] using [[Travis-CI|https://travis-ci.org]] and [[Tiddlywiki 5|https://tiddlywiki.com]] on Node.js.
+
+[[Tiddlywiki under Node.js|https://tiddlywiki.com/static/Installing%2520TiddlyWiki%2520on%2520Node.js.html]] 
+ stores each tiddler in a separate file. A wiki can be hosted on GitHub and Travis-CI can generate `index.html` automatically from GitHub repository and save to GitHub Pages.
+
+
+This procedure can be used to create websites for projects, users, and organizations.
+
+
+;Demo page
+:https://kookma.github.io/Tiddlywiki-Github-Pages-Travis-CI/
+;Code page
+:https://github.com/kookma/Tiddlywiki-Github-Pages-Travis-CI
+
+<<alert info"''Important Note'': This wiki uses automatic making websites from __individual tiddlers__ using Travis-CI on GitHub Pages, for Tiddlywiki single file application, see [[Tiddlywiki-and-GitHub-Pages|https://kookma.github.io/Tiddlywiki-and-GitHub-Pages/]]">>
+
+{{More Information}}

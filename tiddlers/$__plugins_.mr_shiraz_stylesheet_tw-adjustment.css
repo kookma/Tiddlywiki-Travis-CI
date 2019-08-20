@@ -1,0 +1,62 @@
+/*
+This tiddler apply the custom stylesheet for Tiddlywiki.
+*/
+
+
+/* TextArea Setting */
+/* un-comment when Codemirror is not installed
+.tc-tiddler-frame input.tc-edit-texteditor,
+.tc-tiddler-frame textarea.tc-edit-texteditor,
+.tc-tiddler-frame iframe.tc-edit-texteditor{
+line-height: 1.4em; 
+font-size:0.90em;
+font-family:monospace;}
+**/
+
+/*Edit Buttons As Traffic Lights*/
+.tc-tiddler-controls .tc-image-delete-button {fill:#ebb;}
+.tc-tiddler-controls .tc-image-cancel-button {fill:#ed9;}
+.tc-tiddler-controls .tc-image-done-button {fill:#beb;}
+
+/*Four more button in beautiful color*/
+.tc-tiddler-controls .tc-image-edit-button { fill:#F37B1D; }/*edit tiddler*/
+.tc-tiddler-controls .tc-image-info-button { fill: #0e90d2; } /*Info button*/
+.tc-page-controls .tc-image-new-button { fill: #5EB95E; } /*New tiddler button*/
+.tc-page-controls .tc-image-options-button { fill:#8058A5; } /*Open control pannel*/
+
+
+/* Mouseover Toolbar Visibility: Tobias Beer
+.tc-tiddler-frame .tc-titlebar button {
+opacity: 0;
+transition: opacity .5s ease-in-out;
+}
+.tc-tiddler-frame:hover .tc-titlebar button {
+zoom: 1;
+filter: alpha(opacity=100);
+opacity: 1;
+}
+*/
+
+/* This hack is for adjustment the position of icon in tag-button. 
+vertical-align: text-bottom; chnaged to
+*/
+
+.tc-tag-label svg, .tc-tag-label img{
+    vertical-align: middle;
+}
+
+/* Resolve issue for floating objects which cross the tiddler frame!
+The below code should force the tiddler to always wrap around floating elements, so that they are always inside
+Ref: https://groups.google.com/d/msg/tiddlywiki/5bZwwj6cyac/2LzFeA7AAwAJ
+*/
+
+.tc-tiddler-body:before, .tc-tiddler-body:after {
+	content: "";
+	display: table;
+}
+.tc-tiddler-body:after {
+	clear: both;
+}
+.tc-tiddler-body {
+	zoom: 1;
+}

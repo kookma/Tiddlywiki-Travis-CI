@@ -1,0 +1,9 @@
+created: 20190315074043002
+creator: Mohammad
+modified: 20190820140813967
+modifier: Mohammad
+title: $:/status
+type: text/vnd.tiddlywiki
+
+<<dbadge "Powerd by" "Tiddlywiki5 + GitHub-Pages + Travis-CI" info>>
+<<dbadge Tiddlywiki 5.1.15+ primary>> <<dbadge License MIT success>> <<dbadge Release "1.0.0" warning>> <<dbadge Status "stable" danger>> 

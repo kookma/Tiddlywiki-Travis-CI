@@ -1,0 +1,25 @@
+created: 20190401173704785
+creator: Mohammad
+modified: 20190404194840001
+modifier: Mohammad
+tags: start
+title: How Setup GitHub and Travis-CI
+type: text/vnd.tiddlywiki
+
+This demonstration shows how to setup Travis-CI with GitHub. It is based on
+
+# [[Daniel Rodríguez: TW5-auto-publish2gh-pages |https://github.com/danielo515/TW5-auto-publish2gh-pages]]
+# [[Talha Manssor: TW-Scripts demo|https://github.com/talha131/tw-scripts-demo]]
+
+!! Application
+It is possible to integrate GitHub and Travis-CI to create GitHub pages from Tiddlywiki.
+
+!!Requirement
+The list of pre-requisites is quite small, and you only need to fit them once
+
+* A [[Github|https://github.com]] account
+* A [[Travis-ci|https://travis-ci.org/]] account
+
+!! Steps to setup GitHub and Travis-CI
+{{Steps to Setup GitHub-Travis}}
+

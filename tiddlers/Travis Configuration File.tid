@@ -1,0 +1,50 @@
+created: 20190403203118382
+creator: Mohammad
+modified: 20190404185629622
+modifier: Mohammad
+tags: start
+title: Travis Configuration File
+type: text/vnd.tiddlywiki
+
+# In order for Travis CI to build your project, you'll need to add a `.travis.yml` configuration file to the root directory of your repository. 
+# If a `.travis.yml` is not in your repository, or is not valid YAML, Travis CI will ignore it.
+
+To setup GitHub and Travis-CI to generate GitHub pages from individual tillders use the below configuration file.
+
+* Create a text file
+* Name it as `.travis.yml`
+* Put the below code as its content
+* Save and add to the GitHub repository root directory
+
+<$set name=".travis.yml" value="""
+language: node_js
+node_js:
+  - "11"
+dist: trusty
+sudo: false
+
+branches:
+  only:
+  - master
+
+install:
+  - git clone --depth 1 https://github.com/Jermolene/TiddlyWiki5.git
+  - cd TiddlyWiki5
+  - npm link
+  - cd ..
+
+script:
+  - tiddlywiki --verbose --build index
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+  local_dir: output
+  on:
+    branch: master""">
+<$macrocall $name=copy-to-clipboard-above-right src=<<.travis.yml>> />
+<pre><<.travis.yml>></pre>
+</$set>
+
+<<alert warning "''Note'': The above configuration file uses the latest Tiddlywiki 5 prerelease for building the wiki.">>

@@ -1,0 +1,20 @@
+created: 20190404052239921
+creator: Mohammad
+modified: 20190404131933972
+modifier: Mohammad
+title: GitHub Pages for Tiddlywiki Repository
+type: text/vnd.tiddlywiki
+
+;How to setup GitHub Pages for a Tiddlywiki?
+
+Publishing a website or software documentation with GitHub Pages now requires far fewer steps — three to be exact <<fnote "[[Publishing with GitHub pages|https://github.blog/2016-12-09-publishing-with-github-pages-now-as-easy-as-1-2-3/]]">>:
+
+# Create a repository (or navigate to an existing repository)
+# Commit an //index.html// via the web interface, just like you would any other file
+# Activate GitHub Pages via your repository’s settings
+
+<<fnote test>> and <<fnote nest>>
+
+
+<<showfnotes title:"''References''">>
+
