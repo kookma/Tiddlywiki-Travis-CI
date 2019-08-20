@@ -1,6 +1,6 @@
 created: 20190403205324352
 creator: Mohammad
-modified: 20190404193426185
+modified: 20190820160905625
 modifier: Mohammad
 title: Steps to Setup GitHub-Travis
 type: text/vnd.tiddlywiki
@@ -9,24 +9,37 @@ This instruction assumes you have working GitHub and Travis accounts. If not see
 
 # Create a new repository in GitHub
 # Create a [[personal access token|https://github.com/settings/tokens]] in GitHub with enabling the access for `repo`, and `gist` 
-# Save the token from step two above somewhere as you can use it in the below steps
-# Go to https://travis-ci.com/ and sign-in 
+#* Give a name for created token like `GITHUB_TOKEN` or whatever you like
+
+# Save the token name and value from step two above somewhere as you can use it in the below steps
+# Go to https://travis-ci.com/ and sign-in
+#* Travis-CI recommends to login with GitHub account
+#* Travis-CI requests to install Travis app for simple interation of GitHub-Travis
+#* Further info: https://docs.travis-ci.com/user/tutorial/
+
 # Select the repository you want to use with Travis CI
+#* Adding repository is very simple and can be done both from GitHub and Travis-CI
+#* Travis-CI recommends to add all repositories, this way all future created repositories will be added
+
 # On the Travis setting for selected repository (`https://travis-ci.org/<your-github-username>/<your-selected-repo>/settings`) create an ''environmental variable'' with
-#* ''name''=`GITHUB_TOKEN` and 
+#* ''name''=`GITHUB_TOKEN` or what you have choosen in step 2 above and 
 #* ''value''=`the token generated in step 2 above` (these values are like `553dca4a315eb43dd259948db7b9ae18be2d2bd5`)
 #* Make sure to mark "Display value in build log" as "Off".
+
 # In order for Travis-CI to build your project, you'll need to add a `.travis.yml` configuration file to the root directory of your repository. (see [[Travis Configuration File]])
-# After completing these steps, Travis-CI will use the provided YAML configuration file and generates wiki from indivisual tiddlers in your root directory of your repository.
+# After completing these steps, Travis-CI will use the provided YAML configuration file and generates `index.html` from indivisual tiddlers in the `tiddlers` folder in the root directory of your repository.
+
 # You can see what is going on in Travis-CI by visiting the repository ''Build History'' and ''Current'' tabs.
 # This will create an `index.html` in your GitHub repository page under new branch `gh-pages`.
+
 # To give public access to the created `index.html` you need to setup [[GitHub Pages for Tiddlywiki Repository]] from setting page of your repository. To do this
 #* Head over GitHUb and open the selected repository and then go to the setting page
 #* In Options tab, find ''GitHub Pages'' and for Source use `gh-pages` branch
+#* Wait for a minute or so and GitHub will do the job in the background
 #* Point to the new webpage GitHub generates under GitHub Pages!
 
 
-Every changes in the repository, committed from changes in Tiddlywiki tiddlers will trigger Travis-CI to generate a new `index.html` file and stores it on the GitHub pages.
+Every changes in the repository, committed from changes in Tiddlywiki tiddlers will trigger Travis-CI to generate a new `index.html` file and stores it on the GitHub pages under `gh-pages branch`.
 
 
 !! References

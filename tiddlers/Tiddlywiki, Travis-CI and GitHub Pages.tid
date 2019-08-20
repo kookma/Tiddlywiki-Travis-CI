@@ -1,6 +1,6 @@
 created: 20190404132407020
 creator: Mohammad
-modified: 20190820140818605
+modified: 20190820152912768
 modifier: Mohammad
 tags: start
 title: Tiddlywiki, Travis-CI and GitHub Pages
@@ -18,9 +18,9 @@ This procedure can be used to create websites for projects, users, and organizat
 
 
 ;Demo page
-:https://kookma.github.io/Tiddlywiki-Github-Pages-Travis-CI/
+:https://kookma.github.io/Tiddlywiki-Travis-CI/
 ;Code page
-:https://github.com/kookma/Tiddlywiki-Github-Pages-Travis-CI
+:https://github.com/kookma/Tiddlywiki-Travis-CI
 
 <<alert info"''Important Note'': This wiki uses automatic making websites from __individual tiddlers__ using Travis-CI on GitHub Pages, for Tiddlywiki single file application, see [[Tiddlywiki-and-GitHub-Pages|https://kookma.github.io/Tiddlywiki-and-GitHub-Pages/]]">>
 
